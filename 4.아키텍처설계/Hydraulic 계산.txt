@@ -1,0 +1,22 @@
+Input
+
+Condition: Liquid / Vapor / 2PH
+Do: Outlet Diameter
+Di: Inlet Diameter
+L: Length
+Pipe roughness
+flow
+Density
+Viscosity
+
+Addtional data for gas
+
+Addtional data for pump
+pump의 종류
+control v/v 신설/Revamping인지?선택
+
+https://www.slideshare.net/MostafaKhosravyelHos/pipe-line-hydraulic-calculation
+
+crane flow of fluids 
+
+hydraulic formula: 15p ~ 38p

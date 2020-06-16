@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>메인페이지</title>
+<link rel="stylesheet" type="text/css" href="../CSS/menubar.css?after">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<style type="text/css">
+/* Plist =>popualrlist 인기리스트 */
+.Plist {margin: 5px;float: left;width: 180px;margin-left: 50px;}
+.Plist img {width: 200px;height: auto;}
+/* Hlist =>Halflist 할인리스트 */
+div.Hlist {margin: 5px;float: left;width: 400px;margin-left: 150px;}
+div.Hlist img {width: 100%;height: auto;}
+div.Pname {text-align: center;}
+div.Pname a {text-decoration: none;color: black;}
+div.Pname a:hover {color: blue;}
+input[type=text] {width: 130px;box-sizing: border-box;border: 2px solid #ccc;
+  border-radius: 4px;font-size: 16px;background-color: white;background-image: url('../img/검색2.png');
+  background-position: 5px 3px; background-repeat: no-repeat;padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;transition: width 0.4s ease-in-out;
+  margin-left: 45px;}
+input[type=text]:focus {width: 70%;}
+.center {width : 1500px; height:600px; margin-left:140px;}
+</style>
+<script type="text/javascript" src="../jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../jQuery/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../jQuery/jquery.bxslider.js"></script> 
+<script type="text/javascript"> 
+$(function(){
+	  $(".bxslider").bxSlider({
+	        auto: true, 
+	        speed: 500, 
+	        pause: 3000,  
+	        mode: 'horizontal',
+	        pager: true,
+	    });
+});
+</script>
+</head>
+<body>
+	<!-- 상단 메뉴 -->
+	<div class="menu">
+		<ul class="cloth">
+			<a href="#search"><img src="../img/검색.png" style="float: right" width="70px" height="70px"></a>
+			<li class="logo"><a href="메인페이지.html">HABS</a></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">MEN</a>
+				<div class="intxt">
+					<a href="MEN-상의.html">상의</a> <a href="MEN-하의.html">하의</a> <a href="MEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">WOMEN</a>
+				<div class="intxt">
+					<a href="WOMEN-상의.html">상의</a> <a href="WOMEN-하의.html">하의</a> <a href="WOMEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">SHOES</a>
+				<div class="intxt">
+					<a href="SHOES-스니커즈.html">스니커즈</a> <a href="SHOES-운동화.html">운동화</a> <a href="SHOES-구두.html">구두</a>
+				</div></li>
+			<li><a href="BAG.html">BAG</a></li>
+			<li><a href="ACC.html">ACC</a></li>
+			<ul class="scloth">
+				<li id="sub"><a href="로그인페이지.html">로그인</a></li>
+				<li id="sub"><a href="회원가입페이지.html">회원가입</a></li>
+				<li id="sub"><a href="마이페이지.html">마이페이지</a></li>
+			</ul>
+		</ul>
+	</div>
+	<!-- 상단 메뉴 끝 -->
+
+	<!-- 중앙 사진 -->	
+  <ul class="bxslider">
+      <li><img src="../img/중앙1.jpg" class="center"></li>
+      <li><img src="../img/중앙2.jpg" class="center"></li>
+      <li><img src="../img/중앙3.jpg" class="center"></li>
+  </ul>
+	<!-- 중앙 사진 끝 -->
+	
+	<!-- 찾기 -->
+	<div style="margin-top:100px;">
+		<form>
+			<input type="text" name="search" placeholder="Search..">
+		</form>
+	</div>
+	<!-- 이 달의 인기 상품 -->
+	<div>
+		<h2 style="margin-left: 30px;">이 달의 인기상품</h2>
+	</div>
+
+	<!-- 인기 상품 목록 -->
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">여성 맨투맨</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">남성 맨투맨</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">여성 가디건</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">남성 가디건</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">여성 후드티</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">남성 후드티</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">여성 블라우스</a>
+		</div>
+	</div>
+	<div class="Plist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">남성 셔츠</a>
+		</div>
+	</div>
+	<!-- 상품목록 끝  -->
+	<!-- 하단 -->
+	<br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br>
+	<!-- 이 달의 할인 상품 -->
+	<div>
+		<h2 style="margin-left: 30px; margin-top: 30px;">이 달의 할인상품</h2>
+	</div>
+	<!-- 할인 상품목록 -->
+	<div class="Hlist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">가방/에코백</a>
+		</div>
+	</div>
+	<div class="Hlist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">패딩/쟈켓</a>
+		</div>
+	</div>
+	<div class="Hlist">
+		<a href="#"> <img src="../img/준비중.jpg">
+		</a>
+		<div class="Pname">
+			<a href="#">후리스/아노락/집업</a>
+		</div>
+	</div>
+	<div style="background-color: #777; margin-top: 700px; height: 100px;">
+		<h2>ICT 인재교육원 포트폴리오</h2>
+	</div>
+</body>
+</html>

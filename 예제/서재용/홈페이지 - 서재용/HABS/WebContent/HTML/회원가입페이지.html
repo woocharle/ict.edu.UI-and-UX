@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" type="text/css" href="../CSS/menubar.css?after">
+<style type="text/css">
+h1#member {border-bottom: 2px solid blue;margin-top: 50px;margin-left: 100px;width: 80%;}
+
+fieldset {width: 80%;margin-left: 100px;}
+.c1 {margin-left: 250px;width: 50%;}
+.c2 {margin-left: 233px;width: 50%;}
+.c3 {margin-left: 340px;width: 50%;}
+.c4 {margin-left: 265px;width: 50%;}
+.c5 {margin-left: 250px;width: 20%;}
+.c6	{margin-left: 250px;width: 20%;}
+pre {font-size: 12px;margin-left: 350px;}
+a {text-decoration: none;color: black;}
+button {margin-right: 120px;width: 100px;}
+select {width: 123px;height: 30px;}
+</style>
+</head>
+<body>
+	<!-- 상단 메뉴 -->
+	<div class="menu">
+		<ul class="cloth">
+			<a href="#search"><img src="../img/검색.png" style="float: right" width="70px" height="70px"></a>
+			<li class="logo"><a href="메인페이지.html">HABS</a></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">MEN</a>
+				<div class="intxt">
+					<a href="MEN-상의.html">상의</a> <a href="MEN-하의.html">하의</a> <a href="MEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">WOMEN</a>
+				<div class="intxt">
+					<a href="WOMEN-상의.html">상의</a> <a href="WOMEN-하의.html">하의</a> <a href="WOMEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">SHOES</a>
+				<div class="intxt">
+					<a href="SHOES-스니커즈.html">스니커즈</a> <a href="SHOES-운동화.html">운동화</a> <a href="SHOES-구두.html">구두</a>
+				</div></li>
+			<li><a href="BAG.html">BAG</a></li>
+			<li><a href="ACC.html">ACC</a></li>
+			<ul class="scloth">
+				<li id="sub"><a href="로그인페이지.html">로그인</a></li>
+				<li id="sub"><a href="회원가입페이지.html">회원가입</a></li>
+				<li id="sub"><a href="마이페이지.html">마이페이지</a></li>
+			</ul>
+		</ul>
+	</div>
+	<!-- 상단 메뉴 끝 -->
+	<div>
+		<h1 id="member">회원가입 시스템</h1>
+	</div>
+	<!-- 정보 입력란 -->
+	<div>
+		<fieldset>
+			<legend>회원 정보 입력란</legend>
+			<p>
+				<b>아이디 입력<b></b> <input type="text"
+					placeholder="사용할 아이디를 입력해주세요." class="c1">
+			</p>
+			<pre>5~20자,영문,숫자를 이용해서 입력해주세요.</pre>
+			<p>
+				<b>닉네임 입력<b></b> <input type="text"
+					placeholder="사용할 닉네임을 입력해주세요." class="c1">
+			</p>
+			<pre>5~20자,영문,숫자를 이용해서 입력해주세요.</pre>
+			<p>
+				<b>비밀번호 입력<b></b> <input type="password"
+					placeholder="사용할 비밀번호를 입력해주세요." class="c2">
+			</p>
+			<p>
+				<input type="text" placeholder="비밀번호를 재확인해주세요." class="c3">
+			</p>
+			<pre>영문,숫자 포함 6~20자</pre>
+			<p>
+				<b>이름 입력<b></b> <input type="text" placeholder="이름을 입력해주세요."
+					class="c4">
+			</p>
+			<pre>ID/PW 분실 시 가입정보를 통해 찾을 수 있으므로 정확히 입력해주세요.</pre>
+			<p>
+				<b>이메일 입력</b> <input type="email" placeholder="이메일을 입력해주세요."
+					class="c6"> @ <input name="email2" type="text" class="box"
+					id="email2" size="20" style="width:20%;"> 
+					<select>
+					<option value="" selected>선택하세요</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="hanmail.com">hanmail.com</option>
+					<option value="yahoo.co.kr">yahoo.co.kr</option>
+					<option value="1">직접입력</option>
+				</select>
+			</p>
+			<pre>사용할 이메일 주소를 입력해주세요.</pre>
+		</fieldset>
+	</div>
+	<br>
+	<br>
+	<div style="margin-left: 35%;">
+		<button>
+			<a href="메인페이지.html">확인</a>
+		</button>
+		<button>
+			<a href="메인페이지.html">취소</a>
+		</button>
+	</div>
+	<!-- 하단 -->
+	<div style="background-color: #777; margin-top: 300px; height: 100px;">
+		<h2>ICT 인재교육원 포트폴리오</h2>
+	</div>
+</body>
+</html>

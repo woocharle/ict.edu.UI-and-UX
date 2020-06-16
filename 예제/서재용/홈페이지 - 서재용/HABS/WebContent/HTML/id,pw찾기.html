@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이디,패스워드 찾기</title>
+<link rel="stylesheet" type="text/css" href="../CSS/menubar.css?after">
+<style type="text/css">
+.tip{font-size: 10px; color: #888;}
+h1{margin-left: 150px; margin-top: 100px;}
+fieldset {margin-left: 200px;}
+select {width: 123px;height: 30px;}
+</style>
+</head>
+<body>
+	<!-- 상단 메뉴 -->
+	<div class="menu">
+		<ul class="cloth">
+			<a href="#search"><img src="../img/검색.png" style="float: right" width="70px" height="70px"></a>
+			<li class="logo"><a href="메인페이지.html">HABS</a></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">MEN</a>
+				<div class="intxt">
+					<a href="MEN-상의.html">상의</a> <a href="MEN-하의.html">하의</a> <a href="MEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">WOMEN</a>
+				<div class="intxt">
+					<a href="WOMEN-상의.html">상의</a> <a href="WOMEN-하의.html">하의</a> <a href="WOMEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">SHOES</a>
+				<div class="intxt">
+					<a href="SHOES-스니커즈.html">스니커즈</a> <a href="SHOES-운동화.html">운동화</a> <a href="SHOES-구두.html">구두</a>
+				</div></li>
+			<li><a href="BAG.html">BAG</a></li>
+			<li><a href="ACC.html">ACC</a></li>
+			<ul class="scloth">
+				<li id="sub"><a href="로그인페이지.html">로그인</a></li>
+				<li id="sub"><a href="회원가입페이지.html">회원가입</a></li>
+				<li id="sub"><a href="마이페이지.html">마이페이지</a></li>
+			</ul>
+		</ul>
+	</div>
+	<!-- 상단 메뉴 끝 -->
+	<div>
+		<h1>아이디 찾기</h1>
+	</div>
+	<!--아이디 찾기 -->
+	<div>
+		<form action="#" method="get">
+			<fieldset style="width: 1500px;">
+				<legend>아이디 찾기</legend>
+				<p>
+					<label>성명 : </label><input type="text">
+				</p>
+				<p class="tip">*가입 하실 때, 기재하신 성명을 입력해주세요.</p>
+				<p>
+					<label>E-mail : <input name="email1" type="text"
+						class="box" id="email1" size="15"> @ <input name="email2"
+						type="text" class="box" id="email2" size="20"> <select
+						name="email_select" class="box" id="email_select"
+						onChange="checkemailaddy();">
+							<option value="" selected>선택하세요</option>
+							<option value="naver.com">naver.com</option>
+							<option value="hotmail.com">hotmail.com</option>
+							<option value="hanmail.com">hanmail.com</option>
+							<option value="yahoo.co.kr">yahoo.co.kr</option>
+							<option value="1">직접입력</option>
+					</select>
+						<p class="tip">*가입 하실 때, 기재하신 이메일을 입력해주세요.</p>
+						<button type="submit">확인</button>
+			</fieldset>
+		</form>
+	</div>
+	<!--패스워드 찾기 끝 -->
+	<div>
+		<h1>패스워드 찾기</h1>
+	</div>
+	<!--패스워드 찾기 -->
+	<div>
+		<form action="#" method="get">
+			<fieldset style="width: 1500px;">
+				<legend>패스워드 찾기</legend>
+				<p>
+					<label>아이디 : </label><input type="text">
+				</p>
+				<p class="tip">*아이디를 입력해주세요.</p>
+				<p>
+					<label>E-mail : <input name="email1" type="text"
+						class="box" id="email1" size="15"> @ <input name="email2"
+						type="text" class="box" id="email2" size="20"> <select>
+							<option value="" selected>선택하세요</option>
+							<option value="naver.com">naver.com</option>
+							<option value="hotmail.com">hotmail.com</option>
+							<option value="hanmail.com">hanmail.com</option>
+							<option value="yahoo.co.kr">yahoo.co.kr</option>
+							<option value="1">직접입력</option>
+					</select>
+				</p>
+				<p class="tip">*가입 하실 때, 기재하신 이메일을 입력해주세요.</p>
+				<button type="submit">확인</button>
+			</fieldset>
+		</form>
+	</div>
+	<!--패스워드 찾기 끝 -->
+	<!-- 하단 -->
+	<div style="background-color: #777; margin-top: 200px; height: 100px;">
+		<h2>ICT 인재교육원 포트폴리오</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구매페이지</title>
+<link rel="stylesheet" type="text/css" href="../CSS/menubar.css?after">
+<style type="text/css">
+img#cloth {float: left;width: 500px;height: 400px;margin-left: 400px; margin-right: 100px;}
+span{margin-left: 50px;}
+button{width: 200px; height: 50px; margin-left: 10px;}
+#btn1{background: black;}
+#btn2{background: red;}
+#btn3{background: #888;}
+button > span{color: white; font-size: 20px; margin-right: 45px;}
+</style>
+<script type="text/javascript" src="../jQuery/jquery-3.4.1.min.js"></script> 
+<script type="text/javascript">
+$(function(){
+	$('input[type="checkbox"][name="chk_select"]').click(function() {
+    if($(this).prop('checked')){$('input[type="checkbox"][name="chk_select"]').prop('checked',false);
+	$(this).prop('checked',true);}});
+});
+</script>
+</head>
+<body>
+	<!-- 상단 메뉴 -->
+	<div class="menu">
+		<ul class="cloth">
+			<a href="#search"><img src="../img/검색.png" style="float: right" width="70px" height="70px"></a>
+			<li class="logo"><a href="메인페이지.html">HABS</a></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">MEN</a>
+				<div class="intxt">
+					<a href="MEN-상의.html">상의</a> <a href="MEN-하의.html">하의</a> <a href="MEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">WOMEN</a>
+				<div class="intxt">
+					<a href="WOMEN-상의.html">상의</a> <a href="WOMEN-하의.html">하의</a> <a href="WOMEN-아우터.html">아우터</a>
+				</div></li>
+			<li class="inmenu"><a href="javascript:void(0)" class="inner">SHOES</a>
+				<div class="intxt">
+					<a href="SHOES-스니커즈.html">스니커즈</a> <a href="SHOES-운동화.html">운동화</a> <a href="SHOES-구두.html">구두</a>
+				</div></li>
+			<li><a href="BAG.html">BAG</a></li>
+			<li><a href="ACC.html">ACC</a></li>
+			<ul class="scloth">
+				<li id="sub"><a href="로그인페이지.html">로그인</a></li>
+				<li id="sub"><a href="회원가입페이지.html">회원가입</a></li>
+				<li id="sub"><a href="마이페이지.html">마이페이지</a></li>
+			</ul>
+		</ul>
+	</div>
+	<!-- 상단 메뉴 끝 -->
+	<div style="margin-top: 100px;">
+		<h1 style="text-align: center;">상품 구매하기</h1>
+	</div>
+	<!-- 상품 상세정보 설정 -->
+	<div style="margin-top: 100px;">
+		<img src="../img/준비중.jpg" id="cloth">
+
+		<fieldset style="width: 400px; height: 380px;">
+			<legend>주문 옵션 선택</legend>
+			<br>
+			<br><span><b>상품명 : </b>&nbsp;&nbsp;&nbsp;&nbsp;HABS 남자 맨투맨</span>
+			<br> <br> <span><b>가격 : </b>&nbsp;&nbsp;&nbsp;&nbsp;5,5000원</span><br>
+			<br>
+			<hr>
+			<br> <span><b>배송정보 :</b> 2500원</span> <br>
+			<br> <span><b>색상 선택</b></span> <select>
+				<option value="선택하세요.">선택하세요.</option>
+				<option value="추가예정">추가예정</option>
+			</select> <br>
+			<br> <span><b>사이즈 선택</b></span> <input type="checkbox"
+				name="chk_select" value="1">S <input type="checkbox"
+				name="chk_select" value="2">M <input type="checkbox"
+				name="chk_select" value="3">L <input type="checkbox"
+				name="chk_select" value="4">XL <br>
+			<br> <span><b>수량</b> </span><input type="number" step="1" value="1"
+				style="width: 30px;">
+		</fieldset>
+	</div>
+	<!-- 설정 끝 -->
+
+	<!-- 버튼 -->
+	<div style="margin-top: 60px; text-align: center;">
+	<button id="btn1"><span>즐겨찾기</span></button>
+	<button id="btn2"><span>바로구매</span></button>
+	<button id="btn3"><span>뒤로가기</span></button>
+	</div>
+	<!-- 버튼 끝 -->	
+	<!-- 하단 -->
+	<div style="background-color: #777; margin-top: 400px; height: 100px;">
+		<h2>ICT 인재교육원 포트폴리오</h2>
+	</div>
+</body>
+</html>
