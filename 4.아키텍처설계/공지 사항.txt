@@ -1,3 +1,6 @@
+와이어프레임의 MyData 수정
+
+
 Input
 
 Condition: Liquid / Vapor / 2PH
@@ -20,3 +23,5 @@ https://www.slideshare.net/MostafaKhosravyelHos/pipe-line-hydraulic-calculation
 crane flow of fluids 
 
 hydraulic formula: 15p ~ 38p
+
+
