@@ -4,6 +4,8 @@ Pipe Equivalent length complex factor 조사
 
 https://neutrium.net/fluid_flow/pressure-loss-from-fittings-3k-method/
 
+스토리 보드 만들 면서 와이어프레임에 계산 과정에 홈 및 뒤로가기 버튼 추가.
+
 
 
 Input
